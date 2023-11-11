@@ -38,8 +38,6 @@ const parent= React.createElement(
     );
 
 const root= ReactDOM.createRoot(document.getElementById("root"));        
-const root1= ReactDOM.createRoot(document.getElementById("root1"));        
 
 root.render(parent);       
-root1.render(parent);                                            
 
