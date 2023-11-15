@@ -1,7 +1,7 @@
 /** 
 * Nested Elements in React
 * Siblings within a div,use array to store them.
-* ReactElement(Object) ====>> HTML(Browser Unserstands) 
+* ReactElement(Object) ====>> HTML(Browser Understands) 
 
 
 <div id="parent">                           
@@ -19,6 +19,8 @@
 */
 
 
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 
 const parent= React.createElement(
     "div",
