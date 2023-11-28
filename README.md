@@ -67,4 +67,10 @@ Episode-3
 ----------
 ----------
 
+React Components
+------------------
+1.Functional Component(New Way)
+2.Class Component(Old Way)
+
+Functional Component ==> It's a normal JS function that returns JSX piece of code i.e React Element.
 
