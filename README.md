@@ -74,3 +74,9 @@ React Components
 
 Functional Component ==> It's a normal JS function that returns JSX piece of code i.e React Element.
 
+Component Composition
+-----------------------
+Putting a React Component inside another React Component is called Component Composition.
+aka "Nesting of React Components"
+
+
