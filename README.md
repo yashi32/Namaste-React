@@ -2,9 +2,9 @@
 Epsisode-2
 -------------
 -------------
-PART -1
----------
----------
+Episode -1
+------------
+------------
 
 1.  npm
 2.  npm init : Intialize package.json
@@ -26,7 +26,7 @@ PART -1
                             e.g: Parcel is depended on other dependecies/packages
 14. .gitignore
 
-PART-2
+Episode-2
 ----------
 ----------
 Igniting our App/ Hoisting the app on server
@@ -78,5 +78,72 @@ Component Composition
 -----------------------
 Putting a React Component inside another React Component is called Component Composition.
 aka "Nesting of React Components"
+
+Cross Site Scripting(XSS)
+--------------------------
+--------------------------
+
+Cross-site scripting (XSS) is a security exploit which allows an attacker to inject into a website malicious client-side code. This code is executed by the victims and lets the attackers bypass access controls and impersonate users.
+
+1.How to prevent Cross-Site Scripting(XSS) attacks in React apps?
+
+reference
+https://www.linkedin.com/advice/3/how-do-you-prevent-cross-site-scripting-xss-attacks#:~:text=1%20Use%20JSX%20syntax,-One%20of%20the&text=This%20means%20that%20any%20potentially,exposes%20you%20to%20XSS%20risks.
+
+2.What makes your code readable?
+
+Not React but JSX is making your code readable.
+
+3.Why we use arror functions?
+=>Newer way
+=>Industry Standard
+
+Epsiode-4
+----------
+-----------
+1.  UI design of Food cart App
+2.  Inline Style
+
+3. Props:==>
+   --------
+  Props are properties that are dynamically passes to a component.
+
+  prop--> arguments to a function.
+
+  assing prop to a component is similar to passing arguments to a function.
+
+4.  Destructing on the fly
+5. Object Destructing:
+   ---------------------
+   JavaScript Object Destructuring is the syntax for extracting values from an object property and assigning them to a variable. The destructuring is also possible for JavaScript Arrays.
+
+  // assigning object attributes to variables
+  const person = {
+      name: 'Sara',
+      age: 25,
+      gender: 'female'    
+      }
+
+  // destructuring assignment
+    let { name, age, gender } = person;
+
+    console.log(name); // Sara
+    console.log(age); // 25
+    console.log(gender); // female
+
+    Reference: https://www.programiz.com/javascript/destructuring-assignment
+
+6.  Array.prototype.join()
+7.  UI Layer + Data Layer= Frontend Application
+8.  Config Driven UI
+9. Passing Dynamic props to Component
+10. Optional Chaining
+11. Keys : 
+    Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
+
+
+
+
+
 
 

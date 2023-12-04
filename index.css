@@ -1,5 +1,41 @@
-#heading{
-
-    color: blue;
-
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 }
+
+.logo{
+    width:200px;
+}
+
+.nav-items >ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-items > ul >li{
+    padding: 10px 30px;
+    margin: 10px;
+    font-size: 20px;
+}
+.restro-container{
+    display:flex;
+    flex-wrap:wrap
+}
+.res-cart{
+    margin:10px;
+    width: 200px;
+    padding: 20px;
+}
+
+.res-cart:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+.res-logo{
+    width:100%;
+}
+
