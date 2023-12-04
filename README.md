@@ -1,7 +1,5 @@
 # Namaste-React 
-Epsisode-2
--------------
--------------
+
 Episode -1
 ------------
 ------------
@@ -141,8 +139,41 @@ Epsiode-4
 11. Keys : 
     Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
 
+/** UI DESIGN
+* Header
+*      -> Logo
+*      ->Nav Items
+            ->Home
+            ->About Us
+            ->Contact Us
+* Body
+        ->Seach
+        ->Restaurant Container
+            ->Restaurant Cart
+                ->Name
+                ->Star Rating,Cusines,ETA,price
+* Footer
+        ->Copyright
+        ->Links
+        ->Address
+        ->Contact
+*/
 
+Episode-5
+---------
+---------
 
+Two Types of Import/Export
+
+1. Default Import/Export
+
+export default Component;
+import Component from "../path";
+
+2. Named Import/Export
+   
+   export const Component;
+   import {Component } from "./path";
 
 
 
