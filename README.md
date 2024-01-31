@@ -175,6 +175,21 @@ import Component from "../path";
    export const Component;
    import {Component } from "./path";
 
+React Hooks
+------------
+------------
+Normal JS Utility Function
+
+1.  useState() : Maintain state of your component
+2.  useEffect()
+
+Whenever state variable updates React will re-render the component.
+
+Reconcilation Algo /Diffing Algo
+React Fiber
+
+
+
 
 
 

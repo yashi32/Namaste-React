@@ -1,15 +1,31 @@
 import RestroCart from "./RestroCart";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 
 const Body=()=>{
 
 //React Hooks
 //State variable -Superpower variable
-  let [restaurantList,setrestaurantList]=useState(resList);
-  console.log(restaurantList);
-    return(
+  const [restaurantList,setrestaurantList]=useState([]);
+
+  useEffect(()=>
+  {fetchData()},
+  []);
+
+  const fetchData=async ()=>{
+    const url="https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.424514&lng=77.05230879999999";
+    const data=await fetch(url);
+    const json= await data.json();
+   // console.log(json);
+
+    //Optional Chaining
+    setrestaurantList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+  }
+  //Conditional Rendering & Ternary Operator
+
+    return restaurantList.length===0 ?<Shimmer/>:(
         <div className="body">
             <div className="filter-btn">
               <button onClick={()=>{
@@ -18,7 +34,7 @@ const Body=()=>{
                   (res)=>res.info.avgRating>4
                 )
                
-                setrestaurantList(filteredData);
+                setrestaurantList(filteredData); 
                 console.log(restaurantList)
               }
               
